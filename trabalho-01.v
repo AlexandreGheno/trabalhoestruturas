@@ -9,18 +9,18 @@ endmodule
 
 module executatrabalho01;
 	
-		reg clk;
-		always #4 clk <= ~clk;
-		
-		wire saida;
-		
-		trabalho01 led(clk,saida);
-		
-		initial begin
-			$dumpvars(0,led);
-			#1
-			clk = 1;
-			#500
-			$finish;
-		end
+	reg clk;
+	always #4 clk <= ~clk;
+	
+	wire saida;
+	
+	trabalho01 led(clk,saida);
+	
+	initial begin
+		$dumpvars(0,led);
+		#1
+		clk = 1;
+		#500
+		$finish;
+	end
 endmodule
