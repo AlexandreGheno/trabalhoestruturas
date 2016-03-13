@@ -12,7 +12,7 @@ module values(input CLOCK_50,output [1:0]LEDG);
 		 cont = 0;
       end else begin
 		 cont <= cont+1;
-		end
+	end
    end
    
 endmodule
